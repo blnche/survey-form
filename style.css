@@ -86,3 +86,19 @@ button{
     letter-spacing: 0.2em;
     margin: 2rem;
 }
+@media screen and (max-width:700px) {
+    #survey-form{
+        margin: 0.5rem;
+    }
+    .form{
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    .right-end{
+        padding: 0.5rem;
+    }
+    .left, .right{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
