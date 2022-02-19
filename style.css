@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(44, 40, 115);
+    color: white;
+    font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgb(221, 216, 232);
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    display: flex;
+    flex-direction: column;
+    color: #0A0326;
+    margin: 1rem;
+}
+#title{
+    text-align: center;
+    font-size: 3em;
+}
+#description{
+    text-align: center;
+    font-size: 2em;
+}
+#survey-form{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+.form{
+    display: flex;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    margin: 1rem;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    margin: 1rem;
+}
+.right-end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 100%;
+    padding: 2rem;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+label{
+    padding: 0.25rem;
+}
+input, textarea, button{
+    padding: 0.75em;
+    border-radius: 0.25rem;
+    margin-right: 0.625rem;
+    border: none;
+}
+#name, #email, #number{
+    width: 100%;
+}
+#survey-form p{
+    margin: 0;
+    padding: 0.25rem;
+}
+select{
+    font-size: 2em;
+}
+.right-end p{
+    text-align: center;
+    font-size: 2em;
+}
+button{
+    padding: 1.5rem 3rem;
+    background-color: rgb(167, 115, 176);
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin: 2rem;
+}
