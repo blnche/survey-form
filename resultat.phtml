@@ -1,5 +1,22 @@
 <?php 
-    var_dump($_GET);
+    if(isset($_GET["name"]))
+    $name = $_GET["name"];
+    
+    if(isset($_GET["email"]))
+    $email = $_GET["email"];
+    
+    if(isset($_GET["number"]))
+    $number = $_GET["number"];
+    
+    if(isset($_GET["mixed"]))
+    $mixed = $_GET["mixed"];
+    
+    if(isset($_GET["letters"]))
+    $letters = $_GET["letters"];
+    
+    if(isset($_GET["numbers"]))
+    $numbers = $_GET["numbers"];
+    
 ?>
 
 <!DOCTYPE html>
@@ -9,14 +26,47 @@
         <link rel="stylesheet" href="style.css">
     </head>
     
-    <body>
+    <body id="survey-form">
         <header> 
-            <h1>Survey's Results</h1>
+            <h1 id="title">Survey's Results</h1>
         </header>
 
-        <main>
-
-
+        <main class="form-group">
+            <h1>Your name and age : </h1>
+            <h2><?= $name; ?>, <?= $number; ?> years old.</h2>
+            <h1>Contact : </h1>
+            <h2><?= $email; ?></h2>
+            <h1>Your choices : </h1>
+            <h2>
+                <?= $mixed; ?>
+                
+            </h2>
+            <h2>
+                <?php 
+                    foreach ($letters as $item)
+                    {
+                ?>
+                    <li> <?= $item; ?></li>
+                <?php
+                    }
+                ?>
+                
+            </h2>
+            <h2>
+                <?php 
+                    foreach ($numbers as $item)
+                    {
+                ?>
+                    <Li> <?= $item; ?></li>
+                <?php
+                    }
+                ?>
+                
+            </h2>
+            <h1>Your thoughts : </h1>
+            <h2>
+                <?php echo ($_GET["textMore"]); ?>
+            </h2>
         </main>
 
     </body>
