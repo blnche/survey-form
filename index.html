@@ -16,7 +16,7 @@
     </header>
 
     <main>
-        <form action="" id="survey-form">
+        <form method="get" action="resultat.phtml" id="survey-form">
             <div class="form">
                 <div class="left">
                     <div class="form-group">
@@ -25,7 +25,7 @@
                     </div>
                     <div class="form-group">
                         <label for="email" id="email-label">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
                     </div>
                     <div class="form-group">
                         <label for="number" id="number-label">Age</label>
@@ -59,7 +59,7 @@
                     <div class="right-end">
                         <div class="form-group">
                             <p>Want to share more ?</p>
-                            <textarea name="" id=""  cols="35" rows="15"></textarea>
+                            <textarea name="text-more" id="text-more"  cols="35" rows="15"></textarea>
                         </div>
                         <div class="form-group">
                             <button type="submit" id="submit">Submit</button>
