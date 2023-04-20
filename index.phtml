@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Title</h1>
+        <p id="description">Description</p>
+    </header>
+
+    <main>
+        <form method="get" action="resultat.phtml" id="survey-form">
+            <div class="form">
+                <div class="left">
+                    <div class="form-group">
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="number" id="number-label">Age</label>
+                        <input type="number" name="number" id="number" min="13" max="70" placeholder="Enter your age (optional)">
+                    </div>
+                    <div class="form-group">
+                        <label for="mixed">Which one ?</label>
+                        <select name="mixed" id="dropdown">
+                            <option disabled selected value="">Select current role</option>
+                            <option value="1a">1a</option>
+                            <option value="1b">1b</option>
+                            <option value="2a">2a</option>
+                            <option value="2b">2b</option>
+                            <option value="0">0</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p>Pick one</p>
+                        <label for="A"><input type="radio" name="letters" value="A">A</label>
+                        <label for="B"><input type="radio" name="letters" value="B">B</label>
+                        <label for="C"><input type="radio" name="letters" value="C">C</label>
+                    </div>
+                    <div class="form-group">
+                        <p>Pick one or more</p>
+                        <label for="1"><input type="checkbox" name="numbers" value="1">1</label>
+                        <label for="2"><input type="checkbox" name="numbers" value="2">2</label>
+                        <label for="3"><input type="checkbox" name="numbers" value="3">3</label>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-end">
+                        <div class="form-group">
+                            <p>Want to share more ?</p>
+                            <textarea name="text-more" id="text-more"  cols="35" rows="15"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" id="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>
